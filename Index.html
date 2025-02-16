@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎤 Audio to Text Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- 🔹 Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ Audio to Text Converter</h1>
+
+        <!-- 🔹 Google AdSense Banner Ad (Header) -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="YOUR_ADSENSE_CLIENT_ID"
+                data-ad-slot="YOUR_ADSENSE_AD_UNIT_ID"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <label for="language">🌍 Select Language:</label>
+        <select id="language">
+            <option value="en-US">English</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="es-ES">Spanish</option>
+            <option value="fr-FR">French</option>
+        </select>
+
+        <button id="start-btn">🎤 Start Recording</button>
+        <button id="stop-btn" disabled>⏹️ Stop</button>
+        <p id="status">Click "Start" to begin...</p>
+
+        <textarea id="transcription" placeholder="Your transcribed text will appear here..."></textarea>
+
+        <button id="save-btn">💾 Save to Firebase</button>
+        <button id="download-txt">⬇️ Download as TXT</button>
+        <button id="download-pdf">📄 Download as PDF</button>
+        <button id="download-docx">📝 Download as DOCX</button>
+
+        <!-- 🔹 Google AdSense Display Ad (Content Bottom) -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="YOUR_ADSENSE_CLIENT_ID"
+                data-ad-slot="YOUR_ADSENSE_AD_UNIT_ID"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+    <script src="https://unpkg.com/docx@7.1.1/build/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
